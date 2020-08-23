@@ -1,0 +1,12 @@
+const path = require('path');
+
+module.exports = {
+    config: path.resolve(__dirname, 'src', 'config', 'database.js'),
+    'migrations-path': path.resolve(__dirname, 'src', 'database', 'migrations'),
+}
+
+//Testing at Postgres cli
+//psql -U postgres
+//\c sequelize-masterclass
+//\dt to return all tables
+//\d table_name to return a single table
