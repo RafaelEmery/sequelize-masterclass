@@ -11,6 +11,8 @@ const connection = new Sequelize(dbConfig);
 User.init(connection);
 Address.init(connection);
 
+//Enable the Models association
+User.associate(connection.models);
 Address.associate(connection.models);
 
 //Exporting the configured database
